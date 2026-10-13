@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Veralba</title>
+<meta name="description" content="Veralba — the alarm clock that won't stop until you're really up.">
+<meta name="theme-color" content="#070B26">
+<meta name="apple-itunes-app" content="app-id=6820856000">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:title" content="Veralba">
+<meta property="og:description" content="The alarm clock that won't stop until you're really up.">
+<meta property="og:image" content="https://lyfalco.github.io/Veralba/assets/og.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=1">
+</head>
+<body data-page="home">
+<nav class="top">
+  <div class="wrap nav-in">
+    <a class="brand" href="index.html" data-keep><img src="assets/icon.png" alt="">Veralba</a>
+    <button class="burger" aria-label="Menu"><span></span></button>
+    <div class="nav-links">
+      <a href="index.html#features-top" data-keep data-i="nav.features">Features</a>
+      <a href="index.html#how" data-keep data-i="nav.how">How it works</a>
+      <a href="index.html#pro" data-keep>Pro</a>
+      <div class="dd">
+        <button type="button"><span data-i="nav.policies">Policies</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+        <div class="dd-menu">
+          <a href="privacy.html" data-keep data-i="nav.privacy">Privacy Policy</a>
+          <a href="terms.html" data-keep data-i="nav.terms">Terms of Use</a>
+        </div>
+      </div>
+      <a href="contact.html" data-keep data-i="nav.contact">Contact</a>
+      <div class="dd">
+        <button type="button" class="lang-btn"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg><span data-lang-label>English</span></button>
+        <div class="dd-menu langs"></div>
+      </div>
+      <a class="btn btn-gold nav-cta" href="https://apps.apple.com/app/id6820856000" target="_blank" rel="noopener" data-i="nav.download">Download</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="glow gold" style="width:620px;height:620px;top:-180px;inset-inline-end:-120px"></div>
+  <div class="glow blue" style="width:700px;height:700px;bottom:-320px;inset-inline-start:-260px"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill rv" data-i="hero.badge">Wake-up mission alarm</span>
+      <h1 class="rv d1"><span data-i="hero.title1">Actually wake up</span>
+<span class="grad" data-i="hero.title2">when the alarm rings.</span></h1>
+      <p class="sub rv d2" data-i="hero.sub"></p>
+      <div class="hero-ctas rv d3"><span data-badge></span><a class="btn btn-ghost" href="#features-top" data-i="hero.more">See features</a></div>
+      <div class="hero-meta rv d3">
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg><span data-i="hero.m1"></span></span>
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg><span data-i="hero.m2"></span></span>
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5L20 7"/></svg><span data-i="hero.m3"></span></span>
+      </div>
+    </div>
+    <div class="hero-visual rv d2">
+      <div class="float-card fc1"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><div><span data-i="hero.c1"></span><small data-i="hero.c1s"></small></div></div>
+      <div id="hero-phone"></div>
+      <div class="float-card fc2"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="7"/><path d="M12 10v3l2 2"/></svg></span><div><span data-i="hero.c2"></span><small data-i="hero.c2s"></small></div></div>
+    </div>
+  </div>
+</header>
+
+<section class="sec" style="padding-top:40px">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="pill blue" data-i="loop.k"></span><h2 class="sec-title" data-i="loop.title"></h2><p class="sec-sub" data-i="loop.sub"></p></div>
+    <div class="loop" id="loop"></div>
+  </div>
+</section>
+
+<section class="sec" id="features-top" style="padding-top:40px">
+  <div class="wrap">
+    <div class="sec-head rv" id="features-anchor"><span class="pill" data-i="feat.k"></span><h2 class="sec-title" data-i="feat.title"></h2><p class="sec-sub" data-i="feat.sub"></p></div>
+    <div id="features"></div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:40px">
+  <div class="wrap">
+    <div class="sec-head rv"><h2 class="sec-title" data-i="grid.title"></h2><p class="sec-sub" data-i="grid.sub"></p></div>
+    <div class="grid3" id="grid"></div>
+  </div>
+</section>
+
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="pill blue" data-i="how.k"></span><h2 class="sec-title" data-i="how.title"></h2></div>
+    <div class="steps" id="steps"></div>
+  </div>
+</section>
+
+<section class="sec" id="pro" style="padding-top:40px">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="pill">Veralba Pro</span><h2 class="sec-title" data-i="pro.title"></h2><p class="sec-sub" data-i="pro.sub"></p></div>
+    <div class="pro-wrap rv" id="pro-table"></div>
+    <p class="pro-note" data-i="pro.note"></p>
+  </div>
+</section>
+
+<section class="sec" id="faq-sec" style="padding-top:40px">
+  <div class="wrap">
+    <div class="sec-head rv"><h2 class="sec-title" data-i="faq.title"></h2></div>
+    <div class="faq" id="faq"></div>
+    <div class="cta rv">
+      <div class="glow gold" style="width:500px;height:500px;top:-260px;left:50%;transform:translateX(-50%)"></div>
+      <img class="icon" src="assets/icon.png" alt="Veralba">
+      <h2 data-i="cta.title"></h2>
+      <p data-i="cta.sub"></p>
+      <span data-badge></span>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap foot">
+    <a class="brand" href="index.html" data-keep><img src="assets/icon.png" alt="">Veralba</a>
+    <div class="foot-links">
+      <a href="privacy.html" data-keep data-i="nav.privacy">Privacy Policy</a>
+      <a href="terms.html" data-keep data-i="nav.terms">Terms of Use</a>
+      <a href="contact.html" data-keep data-i="nav.contact">Contact</a>
+    </div>
+    <div>© <span id="year">2026</span> Veralba · <span data-i="footer.by">Özgür Yılmaz</span></div>
+  </div>
+</footer>
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>
